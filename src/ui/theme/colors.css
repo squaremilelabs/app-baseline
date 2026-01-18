@@ -1,5 +1,8 @@
+/*
+ * REAL COLOR VARIABLES
+ * https://uicolors.app/
+ */
 :root {
-  /* Real Colors */
   --tw-neutral-50: oklch(0.985 0 0);
   --tw-neutral-100: oklch(0.97 0 0);
   --tw-neutral-200: oklch(0.922 0 0);
@@ -35,10 +38,23 @@
   --sml-gold-800: oklch(44.38% 0.08 62.58);
   --sml-gold-900: oklch(39.94% 0.07 58.15);
   --sml-gold-950: oklch(27.10% 0.05 53.29);
+}
 
-  /* Semantic Colors */
+/*
+ * SEMANTIC COLOR TOKENS
+ * Modify to match your design system.
+ */
+:root {
+  --base-bg: white;
+  --base-surface: var(--tw-neutral-50);
+  --base-text: var(--tw-neutral-950);
+  --base-border: var(--tw-neutral-200);
 }
 
 @theme {
   --color-*: initial;
+  --color-base-bg: var(--base-bg);
+  --color-base-surface: var(--base-surface);
+  --color-base-border: var(--base-border);
+  --color-base-text: var(--base-text);
 }

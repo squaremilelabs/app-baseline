@@ -1,4 +1,5 @@
 @theme {
+  --text-*: initial;
   --text-xs: 9px;
   --text-xs--line-height: 12px;
   --text-sm: 12px;
@@ -11,20 +12,20 @@
   --text-xl--line-height: 32px;
 
   --breakpoint-*: initial;
-  --breakpoint-xs: 18rem; /* 288px */
-  --breakpoint-sm: 36rem; /* 576px */
-  --breakpoint-md: 54rem; /* 864px */
-  --breakpoint-lg: 72rem; /* 1152px */
-  --breakpoint-xl: 90rem; /* 1440px */
+  --breakpoint-xs: 288px; 
+  --breakpoint-sm: 576px; 
+  --breakpoint-md: 864px; 
+  --breakpoint-lg: 1152px; 
+  --breakpoint-xl: 1440px; 
 
   --container-*: initial;
-  --container-xs: 18rem; /* 288px */
-  --container-xs-sm: 27rem; /* 432px */
-  --container-sm: 36rem; /* 576px */
-  --container-sm-md: 45rem; /* 720px */
-  --container-md: 54rem; /* 864px */
-  --container-md-lg: 63rem; /* 1008px */
-  --container-lg: 72rem; /* 1152px */
-  --container-lg-xl: 81rem; /* 1296px */
-  --container-xl: 90rem; /* 1440px */
+  --container-xs: 288px; 
+  --container-xs-sm: 432px; 
+  --container-sm: 576px; 
+  --container-sm-md: 720px; 
+  --container-md: 864px; 
+  --container-md-lg: 1008px; 
+  --container-lg: 1152px; 
+  --container-lg-xl: 1296px; 
+  --container-xl: 1440px; 
 }
