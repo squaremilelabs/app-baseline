@@ -1,6 +1,7 @@
 {
   "name": "name-me",
   "version": "0.0.0",
+  "author": "e@squaremilelabs.com",
   "description": "",
   "license": "ISC",
   "scripts": {
@@ -10,7 +11,7 @@
     "lint": "npx eslint --fix"
   },
   "engines": {
-    "node": "22.x",
+    "node": "24.x",
     "pnpm": "10.x"
   },
   "dependencies": {
