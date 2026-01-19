@@ -1,4 +1,5 @@
 import { Inter as FontSans, Inconsolata as FontMono, Faustina as FontSerif } from "next/font/google"
+import { cn } from "../utils/tailwind"
 
 export const fontSans = FontSans({
   subsets: ["latin"],
@@ -15,4 +16,4 @@ export const fontSerif = FontSerif({
   variable: "--font-serif",
 })
 
-export const fontsClassName = `${fontSans.variable} ${fontMono.variable} ${fontSerif.variable}`
+export const fontsClassName = cn(fontSans.variable, fontMono.variable, fontSerif.variable)
