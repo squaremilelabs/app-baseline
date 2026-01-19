@@ -1,15 +1,25 @@
 import { ReactNode } from "react"
-import { ClassValue } from "tailwind-variants"
+import { ClassValue } from "./tailwind"
 
-export type ChildrenOrFunction<T> = ReactNode | ((renderProps: T) => ReactNode)
-export type ClassNameOrFunction<T> = ClassValue | ((renderProps: T) => ClassValue)
+export type ChildrenOrFunction<R> = ReactNode | ((renderProps: R) => ReactNode)
+export type ClassNameOrFunction<R> = ClassValue | ((renderProps: R) => ClassValue)
 
-export function renderChildren<T>(children: ChildrenOrFunction<T>, renderProps: T) {
+/**
+ * @example
+ * <Button>
+ *   {props => renderChildren(children, props)}
+ * </Button>
+ */
+export function renderChildren<R>(children: ChildrenOrFunction<R>, renderProps: R) {
   if (typeof children === "function") return children(renderProps)
   return children
 }
 
-export function renderClassName<T>(className: ClassNameOrFunction<T>, renderProps: T) {
+/**
+ * @example
+ * <Button className={props => renderClassName(className, props)} />
+ */
+export function renderClassName<R>(className: ClassNameOrFunction<R>, renderProps: R) {
   if (typeof className === "function") return className(renderProps)
   return className
 }
