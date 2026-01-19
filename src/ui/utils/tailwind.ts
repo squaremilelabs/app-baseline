@@ -1,6 +1,8 @@
-import { twMerge } from "tailwind-merge"
-import { ClassValue } from "tailwind-variants"
+import { extendTailwindMerge } from "tailwind-merge"
+import { createTV, ClassValue } from "tailwind-variants"
 
-export function cn(...inputs: ClassValue[]) {
-  return twMerge(inputs)
-}
+const twMergeConfig: Parameters<typeof extendTailwindMerge>[0] = {}
+
+export const cn = (...inputs: ClassValue[]) => extendTailwindMerge(twMergeConfig)(inputs)
+export const tv = createTV({ twMergeConfig })
+export type { ClassValue }
