@@ -6,6 +6,6 @@
 @layer base {
   /*  As of Tailwind V4, border-color defaulted to currentColor. Modified here. */
   *, ::after, ::before, ::backdrop, ::file-selector-button {
-    border-color: var(--color-base-border);
+    border-color: var(--color-base-border); /* Modify to match your design system. */
   }
 }

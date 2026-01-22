@@ -1,5 +1,5 @@
 /*
- * REAL COLOR VARIABLES
+ * REAL COLOR TOKENS
  * https://uicolors.app/
  */
 :root {
@@ -49,6 +49,13 @@
   --base-surface: var(--tw-neutral-50);
   --base-text: var(--tw-neutral-950);
   --base-border: var(--tw-neutral-200);
+}
+
+.dark {
+  --base-bg: black;
+  --base-surface: var(--tw-neutral-950);
+  --base-text: var(--tw-neutral-50);
+  --base-border: var(--tw-neutral-800);
 }
 
 @theme {
